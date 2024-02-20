@@ -1,1 +1,1 @@
-https://eschatz02.github.io/government.su
+https://eschatz02.github.io/government.su/
