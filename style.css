@@ -5,8 +5,8 @@ body {
 }
 
 header {
-  background-color: #333;
-  color: #000;
+  background-color: #333333;
+  color: #FFFFFF;
   padding: 10px 20px;
 }
 
@@ -25,7 +25,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #fff;
+  color: #FFFFFF; /* Changed text color to white for better contrast */
   text-decoration: none;
 }
 
@@ -34,8 +34,8 @@ main {
 }
 
 footer {
-  background-color: #333;
-  color: #000;
+  background-color: #333333;
+  color: #FFFFFF;
   text-align: center;
   padding: 10px 0;
 }
