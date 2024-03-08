@@ -2,17 +2,19 @@ body {
   font-family: Roboto, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #333;
+  background-color: #333; /* Body background color */
+  color: #fff; /* Body text color */
 }
 
-h1 {
-  text-align: center;
-  color: #fff;
+header {
+  background-color: #555; /* Header background color */
+  color: #FFFFFF;
+  padding: 10px 20px;
 }
 
+h1,
 h2 {
   text-align: center;
-  color: #fff;
 }
 
 ul {
