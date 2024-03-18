@@ -2,13 +2,13 @@ body {
   font-family: Roboto, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #333; /* Body background color */
-  color: #fff; /* Body text color */
+  background-color: #fff; /* Body background color */
+  color: #333; /* Body text color */
 }
 
 header {
-  background-color: #fff; /* Header background color */
-  color: #000;
+  background-color: #808080; /* Header background color (grey) */
+  color: #fff;
   padding: 10px 20px;
 }
 
@@ -34,7 +34,7 @@ li {
 a {
   display: block;
   padding: 10px 20px;
-  color: #333;
+  color: #808080; /* Article links color (light grey) */
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
