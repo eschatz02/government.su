@@ -40,7 +40,7 @@ li {
 a {
   display: block;
   padding: 10px 20px;
-  color: lightgrey; /* Media links color */
+  color: #fff; /* Media links color */
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
