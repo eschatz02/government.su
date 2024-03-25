@@ -39,8 +39,9 @@ main {
   gap: 20px;
 }
 
-.container img {
-  width: 100%;
+.container img,
+.image-wrapper img {
+  width: 100%; /* Adjust this value to change the image width */
   height: auto;
 }
 
