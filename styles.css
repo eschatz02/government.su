@@ -41,26 +41,16 @@ main {
 
 .container img,
 .image-wrapper img {
-  width: 100%; /* Adjust this value to change the image width */
-  height: auto;
+  width: 256px; /* Set width to 256 pixels */
+  height: 256px; /* Set height to 256 pixels */
 }
 
-.container .media-window {
+.container .media-window { /* Remove unused selector if not needed */
   position: relative;
   overflow: hidden;
 }
 
-.container .media-window .download-link {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #333;
-  color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-}
+/* Other styles not modified... */
 
 footer {
   background-color: #333333;
