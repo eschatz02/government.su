@@ -50,11 +50,19 @@ main {
 .container .media-window { /* Remove unused selector if not needed */
   position: relative;
   overflow: hidden;
-}
-
-/* Other styles not modified... */
 
 footer {
+
+  .text1 {
+  font-size: 24px;
+  text-align: center;
+}
+
+.text2 {
+  font-size: 12px;
+  text-align: left;
+}
+  
   background-color: #333333;
   color: #FFFFFF;
   text-align: center;
