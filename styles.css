@@ -2,12 +2,14 @@ body {
   font-family: Roboto, sans-serif;
   margin: 0;
   padding: 0;
+  text-align: center; /* Center text in the body */
 }
 
 header {
   background-color: #333333;
   color: #FFFFFF;
   padding: 10px 20px;
+  text-align: center; /* Center text in the header */
 }
 
 header h1 {
