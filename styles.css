@@ -1,3 +1,4 @@
+/* Reset default styles for the entire page */
 body {
   font-family: Roboto, sans-serif;
   margin: 0;
@@ -5,6 +6,7 @@ body {
   text-align: center; /* Center text in the body */
 }
 
+/* Style the header */
 header {
   background-color: #333333;
   color: #FFFFFF;
@@ -12,10 +14,12 @@ header {
   text-align: center; /* Center text in the header */
 }
 
+/* Remove margin from h1 inside the header */
 header h1 {
   margin: 0;
 }
 
+/* Style the navigation menu */
 nav ul {
   padding: 0;
   list-style-type: none;
@@ -31,28 +35,32 @@ nav ul li a {
   text-decoration: none;
 }
 
+/* Add padding to the main content area */
 main {
   padding: 20px;
 }
 
+/* Create a responsive grid layout for the container */
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
 }
 
+/* Set a fixed width and height for images within the container */
 .container img,
 .image-wrapper img {
   width: 256px; /* Set width to 256 pixels */
   height: 256px; /* Set height to 256 pixels */
 }
 
-.container .media-window { /* Remove unused selector if not needed */
+/* Remove unused selector if not needed */
+.container .media-window {
   position: relative;
   overflow: hidden;
 }
 
-/* Updated styles for footer text elements */
+/* Style the footer */
 footer {
   background-color: #333333;
   color: #FFFFFF;
@@ -60,6 +68,7 @@ footer {
   padding: 10px 0;
 }
 
+/* Adjust font size and text alignment for footer text elements */
 .footer-text1 {
   font-size: 24px;
   text-align: center;
