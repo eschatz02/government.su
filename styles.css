@@ -69,11 +69,11 @@ footer {
 
 .footer-section p {
   margin: 0;
-  font-size: 18px; /* Set font size for first text block */
+  font-size: 24px; /* Set font size for first text block */
   text-align: center;
 }
 
 .footer-text2 {
-  font-size: 12px; /* Set font size for second text block */
+  font-size: 6px; /* Set font size for second text block */
   text-align: left;
 }
