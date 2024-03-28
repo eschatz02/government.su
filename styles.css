@@ -1,6 +1,6 @@
 /* Reset default styles for the entire page */
 body {
-  font-family: Roboto, sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   text-align: center; /* Center text in the body */
@@ -54,12 +54,6 @@ main {
   height: 256px; /* Set height to 256 pixels */
 }
 
-/* Remove unused selector if not needed */
-.container .media-window {
-  position: relative;
-  overflow: hidden;
-}
-
 /* Style the footer */
 footer {
   background-color: #CC0000;
@@ -69,12 +63,17 @@ footer {
 }
 
 /* Adjust font size and text alignment for footer text elements */
-.footer-text1 {
-  font-size: 24px;
+.footer-section {
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  margin: 0;
+  font-size: 18px; /* Set font size for first text block */
   text-align: center;
 }
 
 .footer-text2 {
-  font-size: 12px;
+  font-size: 12px; /* Set font size for second text block */
   text-align: left;
 }
