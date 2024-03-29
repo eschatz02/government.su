@@ -77,3 +77,8 @@ footer {
   font-size: 6px; /* Set font size for second text block */
   text-align: left; /* Left-justify the second text block */
 }
+
+.p2 {
+  text-align: left;
+}
+
