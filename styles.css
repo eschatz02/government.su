@@ -3,35 +3,35 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  text-align: center; /* Center text in the body */
+  background-color: #f0f0f0;
 }
 
 /* Style the header */
 header {
-  background-color: #CC0000;
-  color: #FFFFFF;
+  background-color: #cc0000;
+  color: #fff;
   padding: 10px 20px;
-  text-align: center; /* Center text in the header */
+  display: flex;
+  align-items: center;
 }
 
-/* Remove margin from h1 inside the header */
-header h1 {
-  margin: 0;
+header img {
+  margin-right: 10px;
 }
 
-/* Style the navigation menu */
 nav ul {
-  padding: 0;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 nav ul li {
-  display: inline-block;
   margin-right: 20px;
 }
 
 nav ul li a {
-  color: #FFFFFF;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -50,35 +50,40 @@ main {
 /* Set a fixed width and height for images within the container */
 .container img,
 .image-wrapper img {
-  width: 256px; /* Set width to 256 pixels */
-  height: 256px; /* Set height to 256 pixels */
+  width: 100%;
+  height: auto;
 }
 
-/* Style the footer */
 footer {
-  background-color: #CC0000;
-  color: #FFFFFF;
-  text-align: center;
-  padding: 10px 0;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
-/* Adjust font size and text alignment for footer text elements */
 .footer-section {
-  margin-bottom: 10px;
+  flex: 1;
+  margin-right: 20px;
 }
 
-.footer-section p {
-  margin: 0;
-  font-size: 24px; /* Set font size for first text block */
-  text-align: center;
-}
+@media (max-width: 768px) {
+  .header-images {
+    display: none;
+  }
 
-.footer-text2 {
-  font-size: 6px; /* Set font size for second text block */
-  text-align: left; /* Left-justify the second text block */
-}
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-/* Left-align text in p2 class */
-.p2 {
-  text-align: left;
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 }
