@@ -6,28 +6,109 @@
  <title>Government of the Union of Soviet Sovereign Republics</title>
  <link rel="stylesheet" href="styles.css">
  <style>
-   .header-images {
-     position: absolute;
-     top: 0;
-     right: 0;
-     display: flex;
-     flex-direction: row;
-     align-items: right;
-     gap: 10px;
+   /* Reset default styles for the entire page */
+   body {
+     font-family: Arial, sans-serif;
+     margin: 0;
+     padding: 0;
+     background-color: #f0f0f0;
    }
 
-   /* Added CSS for smaller images */
+   /* Style the header */
+   header {
+     background-color: #cc0000;
+     color: #fff;
+     padding: 10px 20px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between; /* Align items and create space between logo and title */
+   }
+
+   header img {
+     margin-right: 10px;
+   }
+
+   nav {
+     text-align: right; /* Right-align the nav */
+   }
+
+   nav ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     display: inline-block; /* Display as inline-block to make it right-aligned */
+   }
+
+   nav ul li {
+     display: inline-block; /* Display list items as inline-block */
+     margin-right: 20px;
+   }
+
+   nav ul li a {
+     color: #fff;
+     text-decoration: none;
+   }
+
+   /* Add padding to the main content area */
+   main {
+     padding: 20px;
+   }
+
+   /* Create a responsive grid layout for the container */
+   .container {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+     gap: 20px;
+   }
+
+   /* Set a fixed width and height for images within the container */
+   .container img,
    .image-wrapper img {
-     width: 100px;
-     height: 100px;
+     width: 100%;
+     height: auto;
+   }
+
+   footer {
+     background-color: #333;
+     color: #fff;
+     padding: 20px;
+     display: flex;
+     justify-content: space-between;
+   }
+
+   .footer-section {
+     flex: 1;
+     margin-right: 20px;
+   }
+
+   @media (max-width: 256px) {
+     .header-images {
+       display: none;
+     }
+
+     header {
+       flex-direction: column;
+       align-items: flex-start;
+     }
+
+     nav ul {
+       display: block;
+       text-align: left;
+     }
+
+     nav ul li {
+       display: block;
+       margin-right: 0;
+       margin-bottom: 10px;
+     }
    }
  </style>
 </head>
 <body>
-<header style="text-align: right;">
+<header>
    <img src="Logo.png" alt="Logo" width="100" height="88">
-   <h1 style="text-align: right;">Союз Советских Суверенных Республик</h1>
-   <nav style="text-align: right;">
+   <h1>Союз Советских Суверенных Республик</h1>
+   <nav>
      <ul>
        <li><a href="index.html">Дом</a></li>
        <li><a href="#">О</a></li>
@@ -38,27 +119,7 @@
  </header>
 
 <main>
-  <h1>Свежие новости</h1>
-  <div class="container">
-    <div class="image-wrapper">
-      <a href="ЦСКА ошеломил футбольный мир победой над «Манчестер Сити» со счетом 3_2 в лиге чемпионов УЕФА.pdf" download>
-        <img src="CSKA.jpg" alt="ЦСКА ошеломил футбольный мир победой над «Манчестер Сити» со счетом 3_2 в лиге чемпионов УЕФА" width="150" height="150">
-      </a>
-      <h3>ЦСКА ошеломил футбольный мир</h3>
-    </div>
-    <div class="image-wrapper">
-      <a href="КПСС ОСУЖДАЕТ ВОЗОБНОВЛЕННЫЕ ПРИЗЫВЫ «ЕДИНОЙ РОССИИ» ОТВЕСТИ ЗАЯВЛЕННЫЕ ПОТЕРЯННЫЕ ЗЕМЛИ.pdf" download>
-        <img src="Putin.jpg" alt="КПСС ОСУЖДАЕТ ВОЗОБНОВЛЕННЫЕ ПРИЗЫВЫ «ЕДИНОЙ РОССИИ» ОТВЕСТИ ЗАЯВЛЕННЫЕ ПОТЕРЯННЫЕ ЗЕМЛИ" width="150" height="150">
-      </a>
-      <h3>КПСС ОСУЖДАЕТ ВОЗОБНОВЛЕННЫЕ ПРИЗЫВЫ «ЕДИНОЙ РОССИИ»</h3>
-    </div>
-    <div class="image-wrapper">
-      <a href="НАПРЯЖЕННОСТЬ МЕЖДУ СОЮЗОМ СОВЕТСКИХ Суверенных РЕСПУБЛИК И ОБЪЕДИНЕННОЙ РЕСПУБЛИКОЙ БАЛТИЯ ИЗ-ЗА ГРАНИЧНОГО СПОРА РАСТУТ.pdf" download>
-        <img src="Latvia.jpg" alt="НАПРЯЖЕННОСТЬ МЕЖДУ СОЮЗОМ СОВЕТСКИХ Суверенных РЕСПУБЛИК И ОБЪЕДИНЕННОЙ РЕСПУБЛИКОЙ БАЛТИЯ ИЗ-ЗА ГРАНИЧНОГО СПОРА РАСТУТ" width="150" height="150">
-      </a>
-      <h3>НАПРЯЖЕННОСТЬ МЕЖДУ СОЮЗОМ СОВЕТСКИХ Суверенных РЕСПУБЛИК И ОБЪЕДИНЕННОЙ РЕСПУБЛИКОЙ БАЛТИЯ</h3>
-    </div>
-  </div>
+  <!-- Main content goes here -->
 </main>
 
  <footer>
