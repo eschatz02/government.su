@@ -24,6 +24,8 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex;
+  justify-content: flex-end; /* Right-align/justify the header links */
+  flex: 1;
 }
 
 nav ul li {
