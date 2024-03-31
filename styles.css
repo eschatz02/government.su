@@ -58,8 +58,8 @@ main {
 .image-wrapper img {
   width: 100%;
   height: auto;
-  max-width: 200px; /* Set maximum width for images */
-  max-height: 200px; /* Set maximum height for images */
+  max-width: 250px; /* Set maximum width for images */
+  max-height: 250px; /* Set maximum height for images */
 }
 
 footer {
