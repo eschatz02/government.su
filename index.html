@@ -5,6 +5,104 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>Government of the Union of Soviet Sovereign Republics</title>
  <link rel="stylesheet" href="styles.css">
+ <style>
+   /* Reset default styles for the entire page */
+   body {
+     font-family: Arial, sans-serif;
+     margin: 0;
+     padding: 0;
+     background-color: #f0f0f0;
+   }
+
+   /* Style the header */
+   header {
+     background-color: #cc0000;
+     color: #fff;
+     padding: 10px 20px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between; /* Align items and create space between logo and title */
+   }
+
+   header img {
+     margin-right: 10px;
+   }
+
+   nav {
+     text-align: right; /* Right-align the nav */
+   }
+
+   nav ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     display: inline-block; /* Display as inline-block to make it right-aligned */
+   }
+
+   nav ul li {
+     display: inline-block; /* Display list items as inline-block */
+     margin-right: 20px;
+   }
+
+   nav ul li a {
+     color: #fff;
+     text-decoration: none;
+   }
+
+   /* Add padding to the main content area */
+   main {
+     padding: 20px;
+   }
+
+   /* Create a responsive grid layout for the container */
+   .container {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+     gap: 20px;
+   }
+
+   /* Set a fixed width and height for images within the container */
+   .container img,
+   .image-wrapper img {
+     width: 100%;
+     height: auto;
+   }
+
+   footer {
+     background-color: #333;
+     color: #fff;
+     padding: 20px;
+     display: flex;
+     justify-content: space-between;
+   }
+
+   .footer-section {
+     flex: 1;
+     margin-right: 20px;
+   }
+
+   @media (max-width: 100px) {
+     .header-images {
+       display: none;
+     }
+
+     header {
+       flex-direction: column;
+       align-items: flex-start;
+     }
+
+     nav ul {
+       display: block;
+       text-align: left;
+     }
+
+     nav ul li {
+       display: block;
+       margin-right: 0;
+       margin-bottom: 10px;
+     }
+   }
+ </style>
 </head>
 <body>
 <header>
