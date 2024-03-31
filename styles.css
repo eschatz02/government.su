@@ -60,6 +60,14 @@ main {
   height: auto;
   max-width: 250px; /* Set maximum width for images */
   max-height: 250px; /* Set maximum height for images */
+  display: block; /* Make images block-level elements */
+  margin: 0 auto 10px; /* Center images horizontally and add margin below */
+}
+
+/* Style the text below each image */
+.image-wrapper h3 {
+  text-align: center; /* Center-align text */
+  margin: 0; /* Remove default margins */
 }
 
 footer {
@@ -80,7 +88,7 @@ header h1 {
   margin: 0 auto; /* Set top and bottom margins to 0 and auto for horizontal centering */
 }
 
-@media (max-width: 100px) {
+@media (max-width: 700px) {
   .header-images {
     display: none;
   }
