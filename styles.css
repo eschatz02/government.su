@@ -12,24 +12,27 @@ header {
   color: #fff;
   padding: 10px 20px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between; /* Align items and create space between logo and title */
 }
 
 header img {
   margin-right: 10px;
 }
 
+nav {
+  text-align: right; /* Right-align the nav */
+}
+
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: flex-end; /* Right-align/justify the header links */
-  flex: 1;
+  display: inline-block; /* Display as inline-block to make it right-aligned */
 }
 
 nav ul li {
+  display: inline-block; /* Display list items as inline-block */
   margin-right: 20px;
 }
 
@@ -55,7 +58,8 @@ main {
 .image-wrapper img {
   width: 100%;
   height: auto;
-  max-width: 100%; /* Ensure images don't exceed their container width */
+  max-width: 100px; /* Set maximum width for images */
+  max-height: 100px; /* Set maximum height for images */
 }
 
 footer {
@@ -71,6 +75,11 @@ footer {
   margin-right: 20px;
 }
 
+/* Center align the h1 in the header */
+header h1 {
+  margin: 0 auto; /* Set top and bottom margins to 0 and auto for horizontal centering */
+}
+
 @media (max-width: 100px) {
   .header-images {
     display: none;
@@ -82,11 +91,12 @@ footer {
   }
 
   nav ul {
-    flex-direction: column;
-    align-items: flex-start;
+    display: block;
+    text-align: left;
   }
 
   nav ul li {
+    display: block;
     margin-right: 0;
     margin-bottom: 10px;
   }
