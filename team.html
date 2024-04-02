@@ -1,55 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fictional Country Repository</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>People List</title>
+<style>
+  /* Basic styling */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+  .person {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+  .person img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  .person h2 {
+    margin: 0;
+  }
+  .person p {
+    margin: 5px 0;
+  }
+</style>
 </head>
 <body>
-  <header>
-    <h1>Welcome to [Fictional Country Name]</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#map">Map</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main>
-    <section id="about">
-      <h2>About [Fictional Country Name]</h2>
-      <p>[Description of the fictional country goes here]</p>
-    </section>
+<div class="container">
+  <div class="person">
+    <img src="person1.jpg" alt="Person 1">
+    <div>
+      <h2>Михаил Ходорковский</h2>
+      <p>Президент</p>
+    </div>
+  </div>
+  <div class="person">
+    <img src="person2.jpg" alt="Person 2">
+    <div>
+      <h2>Jane Smith</h2>
+      <p>Title: CTO</p>
+    </div>
+  </div>
+  <!-- Add more people as needed -->
+</div>
 
-    <section id="map">
-      <h2>Map of [Fictional Country Name]</h2>
-      <!-- Add an image of the map or use an embedded map service like Google Maps -->
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d..."></iframe>
-    </section>
-
-    <section id="gallery">
-      <h2>Gallery</h2>
-      <div class="image-gallery">
-        <!-- Add image tags with src attributes pointing to your images -->
-        <img src="image1.jpg" alt="Image 1">
-        <img src="image2.jpg" alt="Image 2">
-        <!-- Add more images as needed -->
-      </div>
-    </section>
-
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <p>Email: fictionalcountry@example.com</p>
-      <p>Phone: +1234567890</p>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2024 [Your Name] - Fictional Country Repository</p>
-  </footer>
 </body>
 </html>
