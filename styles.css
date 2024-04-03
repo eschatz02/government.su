@@ -109,3 +109,8 @@ header h1 {
     margin-bottom: 10px;
   }
 }
+
+/* Additional style for image alignment */
+.image-wrapper {
+  text-align: right;
+}
