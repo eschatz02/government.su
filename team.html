@@ -5,17 +5,33 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>People List</title>
 <style>
+  /* Style the header */
+  header {
+    background-color: #cc0000;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Align items and create space between logo and title */
+  }
+
+  header img {
+    margin-right: 10px;
+  }
+
   /* Basic styling */
   body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
   }
+
   .container {
     max-width: 800px;
     margin: 20px auto;
     padding: 0 20px;
   }
+
   .person {
     margin-bottom: 20px;
     border-bottom: 1px solid #ccc;
@@ -23,15 +39,18 @@
     display: flex;
     align-items: center;
   }
+
   .person img {
     width: 256px;
     height: 256px;
     border-radius: 50%;
     margin-right: 20px;
   }
+
   .person h2 {
     margin: 0;
   }
+
   .person p {
     margin: 5px 0;
   }
@@ -57,39 +76,52 @@
 </head>
 <body>
 
-<div class="container">
-  <div class="person">
-    <img src="Khodorkovsky.jpg">
-    <div>
-      <h2>Михаил Ходорковский</h2>
-      <p>Президент</p>
-    </div>
-  </div>
-  <div class="person">
-    <img src="Volkov.jpg">
-    <div>
-      <h2>Леонид Волков</h2>
-      <p>вице-президент</p>
-    </div>
-  </div>
-  <div class="person">
-    <img src="Vladimir_Putin_-_2012.jpg">
-    <div>
-      <h2>Владимир Путин</h2>
-      <p>Председатель Советской Думы</p>
-    </div>
-  </div>
-  <!-- Add more people as needed -->
-</div>
+  <header>
+    <img src="Logo.png" alt="Logo" width="100" height="88">
+    <h1>Союз Советских Суверенных Республик</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Дом</a></li>
+        <li><a href="team.html">О</a></li>
+        <li><a href="#">История</a></li>
+        <li><a href="#">Контакт</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<footer>
-  <div class="footer-section">
-    <p>&#169; 2024 Союз Советских Суверенных Республик.</p>
+  <div class="container">
+    <div class="person">
+      <img src="Khodorkovsky.jpg" alt="Михаил Ходорковский">
+      <div>
+        <h2>Михаил Ходорковский</h2>
+        <p>Президент</p>
+      </div>
+    </div>
+    <div class="person">
+      <img src="Volkov.jpg" alt="Леонид Волков">
+      <div>
+        <h2>Леонид Волков</h2>
+        <p>вице-президент</p>
+      </div>
+    </div>
+    <div class="person">
+      <img src="Vladimir_Putin_-_2012.jpg" alt="Владимир Путин">
+      <div>
+        <h2>Владимир Путин</h2>
+        <p>Председатель Советской Думы</p>
+      </div>
+    </div>
+    <!-- Add more people as needed -->
   </div>
-  <div class="footer-section">
-    <p>Этот веб-сайт предназначен только для информационных целей и не представляет какой-либо официальный государственный орган. Союз Советских Социалистических Республик (СССР) распался в 1991 году. Подробнее об истории СССР можно узнать на исторических сайтах.</p>
-  </div>
-</footer>
+
+  <footer>
+    <div class="footer-section">
+      <p>&#169; 2024 Союз Советских Суверенных Республик.</p>
+    </div>
+    <div class="footer-section">
+      <p>Этот веб-сайт предназначен только для информационных целей и не представляет какой-либо официальный государственный орган. Союз Советских Социалистических Республик (СССР) распался в 1991 году. Подробнее об истории СССР можно узнать на исторических сайтах.</p>
+    </div>
+  </footer>
 
 </body>
 </html>
