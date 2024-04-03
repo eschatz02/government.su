@@ -60,13 +60,13 @@ main {
   height: auto;
   max-width: 250px; /* Set maximum width for images */
   max-height: 250px; /* Set maximum height for images */
-  display: grid /* Make images block-level elements */
+  display: block /* Make images block-level elements */
   margin: 0 auto 10px; /* Center images horizontally and add margin below */
 }
 
 /* Style the text below each image */
 .image-wrapper h3 {
-  text-align: block; /* Center-align text */
+  text-align: left; /* Center-align text */
   margin: 0; /* Remove default margins */
 }
 
