@@ -1,116 +1,121 @@
-/* Reset default styles for the entire page */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f0f0f0;
-}
-
-/* Style the header */
-header {
-  background-color: #cc0000;
-  color: #fff;
-  padding: 10px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between; /* Align items and create space between logo and title */
-}
-
-header img {
-  margin-right: 10px;
-}
-
-nav {
-  text-align: right; /* Right-align the nav */
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: inline-block; /* Display as inline-block to make it right-aligned */
-}
-
-nav ul li {
-  display: inline-block; /* Display list items as inline-block */
-  margin-right: 20px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-/* Add padding to the main content area */
-main {
-  padding: 20px;
-}
-
-/* Create a responsive grid layout for the container */
-.container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-}
-
-/* Set a fixed width and height for images within the container */
-.container img,
-.image-wrapper img {
-  width: 100%;
-  height: auto;
-  max-width: 250px; /* Set maximum width for images */
-  max-height: 250px; /* Set maximum height for images */
-  display: block; /* Make images block-level elements */
-  margin: 0 auto 10px; /* Center images horizontally and add margin below */
-}
-
-/* Style the text below each image */
-.image-wrapper h3 {
-  text-align: center; /* Center-align text */
-  margin: 0; /* Remove default margins */
-}
-
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer-section {
-  flex: 1;
-  margin-right: 20px;
-}
-
-/* Center align the h1 in the header */
-header h1 {
-  margin: 0 auto; /* Set top and bottom margins to 0 and auto for horizontal centering */
-}
-
-@media (max-width: 700px) {
-  .header-images {
-    display: none;
+<style>
+  /* Reset default styles for the entire page */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
   }
 
+  /* Style the header */
   header {
-    flex-direction: column;
+    background-color: #cc0000;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
     align-items: center;
+    justify-content: space-between; /* Align items and create space between logo and title */
+  }
+
+  header img {
+    margin-right: 10px;
+  }
+
+  nav {
+    text-align: right; /* Right-align the nav */
   }
 
   nav ul {
-    display: block;
-    text-align: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block; /* Display as inline-block to make it right-aligned */
   }
 
   nav ul li {
-    display: block;
-    margin-right: 0;
-    margin-bottom: 10px;
+    display: inline-block; /* Display list items as inline-block */
+    margin-right: 20px;
   }
-}
 
-/* Additional style for image alignment */
-.image-wrapper {
-  text-align: right;
-}
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  /* Add padding to the main content area */
+  main {
+    padding: 20px;
+    text-align: left; /* Align text to the left */
+    margin-left: 0; /* Align the container to the left */
+    max-width: none; /* Remove any maximum width constraints */
+  }
+
+  /* Create a responsive grid layout for the container */
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+
+  /* Set a fixed width and height for images within the container */
+  .container img,
+  .image-wrapper img {
+    width: 100%;
+    height: auto;
+    max-width: 250px; /* Set maximum width for images */
+    max-height: 250px; /* Set maximum height for images */
+    display: block; /* Make images block-level elements */
+    margin: 0 auto 10px; /* Center images horizontally and add margin below */
+  }
+
+  /* Style the text below each image */
+  .image-wrapper h3 {
+    text-align: center; /* Center-align text */
+    margin: 0; /* Remove default margins */
+  }
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-section {
+    flex: 1;
+    margin-right: 20px;
+  }
+
+  /* Center align the h1 in the header */
+  header h1 {
+    margin: 0 auto; /* Set top and bottom margins to 0 and auto for horizontal centering */
+  }
+
+  @media (max-width: 700px) {
+    .header-images {
+      display: none;
+    }
+
+    header {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    nav ul {
+      display: block;
+      text-align: left;
+    }
+
+    nav ul li {
+      display: block;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+
+  /* Additional style for image alignment */
+  .image-wrapper {
+    text-align: right;
+  }
+</style>
