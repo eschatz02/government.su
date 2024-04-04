@@ -105,3 +105,16 @@ header h1 {
     margin-bottom: 10px;
   }
 }
+
+/* Style the text below each image */
+.image-wrapper h3 {
+  text-align: center; /* Center-align text */
+  margin: 0; /* Remove default margins */
+}
+
+/* Style the image section */
+.image-section {
+  float: right;
+  width: 30%; /* Adjust as needed */
+  margin-left: 20px; /* Add space between main content and image */
+}
