@@ -111,5 +111,6 @@ header h1 {
 .image-section {
   float: right;
   width: auto; /* Adjust as needed */
+  display: block;
   margin-left: 0px; /* Add space between main content and image */
 }
