@@ -48,7 +48,7 @@ main {
 
 /* Create a responsive grid layout for the container */
 .container {
-  display: grid;
+  display: inline ;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
 }
@@ -60,7 +60,7 @@ main {
   height: auto;
   max-width: 250px; /* Set maximum width for images */
   max-height: 250px; /* Set maximum height for images */
-  display: table ; /* Make images block-level elements */
+  display: inline-table ; /* Make images block-level elements */
   margin: 0 auto 10px; /* Center images horizontally and add margin below */
 }
 
