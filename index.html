@@ -124,6 +124,23 @@
     .image-wrapper {
       text-align: right;
     }
+
+    /* Set a fixed width and height for images within the container */
+    .container img,
+    .image-wrapper img {
+      width: 100%;
+      height: auto;
+      max-width: 250px; /* Set maximum width for images */
+      max-height: 250px; /* Set maximum height for images */
+      display: inline-block; /* Make images block-level elements */
+      margin: 0 10px 10px 0; /* Set margin for images (top, right, bottom, left) */
+      float: left; /* Float images to the left */
+    }
+
+    /* Optional: Add some padding to the text on the right */
+    .text {
+      padding-left: 20px;
+    }
   </style>
 </head>
 <body>
