@@ -60,7 +60,7 @@ main {
   height: auto;
   max-width: 250px; /* Set maximum width for images */
   max-height: 250px; /* Set maximum height for images */
-  display: block; /* Make images block-level elements */
+  display: inline-block; /* Make images block-level elements */
   margin: 0 auto 10px; /* Center images horizontally and add margin below */
 }
 
