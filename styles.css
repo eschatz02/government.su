@@ -112,4 +112,6 @@ header h1 {
   float: right;
   width: 30%; /* Adjust as needed */
   margin-left: 20px; /* Add space between main content and image */
+  max-width: 512px;
+  max-height: 341px;
 }
