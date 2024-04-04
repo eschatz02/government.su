@@ -112,5 +112,5 @@ header h1 {
   float: right;
   width: auto; /* Adjust as needed */
   display: block;
-  margin-right: 50px /* Add space between main content and image */
+  margin-right: 50px; /* Add space between main content and image */
 }
