@@ -44,6 +44,9 @@ nav ul li a {
 /* Add padding to the main content area */
 main {
   padding: 20px;
+  text-align: left; /* Align text to the left */
+  margin-left: 0; /* Align the container to the left */
+  max-width: none; /* Remove any maximum width constraints */
 }
 
 /* Create a responsive grid layout for the container */
@@ -61,7 +64,8 @@ main {
   max-width: 250px; /* Set maximum width for images */
   max-height: 250px; /* Set maximum height for images */
   display: inline-block; /* Make images block-level elements */
-  margin: 0 auto 10px; /* Center images horizontally and add margin below */
+  margin: 0 10px 10px 0; /* Set margin for images (top, right, bottom, left) */
+  float: left; /* Float images to the left */
 }
 
 /* Style the text below each image */
@@ -113,4 +117,9 @@ header h1 {
 /* Additional style for image alignment */
 .image-wrapper {
   text-align: right;
+}
+
+/* Optional: Add some padding to the text on the right */
+.text {
+  padding-left: 20px;
 }
