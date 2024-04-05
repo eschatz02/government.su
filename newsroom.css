@@ -1,18 +1,19 @@
-/* General styles */
+/* Reset default styles for the entire page */
 body {
-  font-family: Arial, sans-serif;
+  font-family: Roboto, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #f0f0f0;
 }
 
-/* Header styles */
+/* Style the header */
 header {
   background-color: #cc0000;
   color: #fff;
   padding: 10px 20px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; /* Align items and create space between logo and title */
 }
 
 header img {
@@ -20,18 +21,18 @@ header img {
 }
 
 nav {
-  text-align: right;
+  text-align: right; /* Right-align the nav */
 }
 
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: inline-block;
+  display: inline-block; /* Display as inline-block to make it right-aligned */
 }
 
 nav ul li {
-  display: inline-block;
+  display: inline-block; /* Display list items as inline-block */
   margin-right: 20px;
 }
 
@@ -40,26 +41,42 @@ nav ul li a {
   text-decoration: none;
 }
 
-/* Main content area styles */
+/* Add padding to the main content area */
 main {
   padding: 20px;
 }
 
+/* Create a responsive grid layout for the container */
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
 }
 
+/* Set a fixed width and height for images within the container */
 .container img,
 .image-wrapper img {
   width: 100%;
   height: auto;
-  max-width: 250px;
-  max-height: 250px;
+  max-width: 250px; /* Set maximum width for images */
+  max-height: 250px; /* Set maximum height for images */
 }
 
-/* Footer styles */
+/* Style the text below each image */
+.image-wrapper h3 {
+  text-align: center; /* Center-align text */
+  margin: 0; /* Remove default margins */
+}
+
+/* Additional section for editing text placement of h3 elements */
+.text-placement {
+  /* Add your custom text placement styles here */
+  /* Example: */
+  margin-top: 10px; /* Adjust margin to change vertical placement */
+  margin-bottom: 10px; /* Adjust margin to change vertical placement */
+  text-align: left; /* Adjust text alignment as needed */
+}
+
 footer {
   background-color: #333;
   color: #fff;
@@ -73,7 +90,11 @@ footer {
   margin-right: 20px;
 }
 
-/* Media query for smaller screens */
+/* Center align the h1 in the header */
+header h1 {
+  margin: 0 0 0 125px; /* Offset title by 50px to the right */
+}
+
 @media (max-width: 700px) {
   .header-images {
     display: none;
@@ -94,4 +115,12 @@ footer {
     margin-right: 0;
     margin-bottom: 10px;
   }
+}
+
+/* Style the image section */
+.image-section {
+  float: right;
+  width: auto; /* Adjust as needed */
+  display: block;
+  margin-right: 150px; /* Add space between main content and image */
 }
