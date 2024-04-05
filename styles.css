@@ -49,7 +49,7 @@ main {
 /* Create a responsive grid layout for the container */
 .container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Updated minmax value for better responsiveness */
   gap: 20px;
 }
 
@@ -106,12 +106,11 @@ header h1 {
     margin-right: 0;
     margin-bottom: 10px;
   }
-}
 
-/* Style the image section */
-.image-section {
-  float: right;
-  width: auto; /* Adjust as needed */
-  display: block;
-  margin-right: 150px; /* Add space between main content and image */
+  /* Adjust the image-section for smaller screens */
+  .image-section {
+    float: none; /* Remove float */
+    margin-right: 0; /* Remove margin */
+    margin-top: 20px; /* Add space between main content and image */
+  }
 }
