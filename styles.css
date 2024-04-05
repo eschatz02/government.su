@@ -1,4 +1,4 @@
-//* Reset default styles for the entire page */
+/* Reset default styles for the entire page */
 body {
   font-family: Roboto, sans-serif;
   margin: 0;
@@ -48,17 +48,18 @@ main {
 
 /* Create a responsive grid layout for the container */
 .container {
-  display: inline;
-  text-align: left;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
 }
 
 /* Set a fixed width and height for images within the container */
-.container img {
-  display: block;
+.container img,
+.image-wrapper img {
   width: 100%;
   height: auto;
-  max-width: 256px;
-  max-height: 256px;
+  max-width: 250px; /* Set maximum width for images */
+  max-height: 250px; /* Set maximum height for images */
 }
 
 /* Style the text below each image */
