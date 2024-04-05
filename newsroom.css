@@ -61,7 +61,7 @@ main {
 
  /* Style the text below each image */
     .image-wrapper h3 {
-      text-align: left; /* Center-align text */
+      text-align: center; /* Center-align text */
 
 /* Footer styles */
 footer {
