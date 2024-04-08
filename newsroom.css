@@ -57,7 +57,7 @@ main {
   height: auto;
   max-width: 250px;
   max-height: 250px;
-  margin-left: 65px; /* Add margin around the images */
+  margin-left: 60px; /* Add margin around the images */
 }
 
 .image-wrapper h3 {
