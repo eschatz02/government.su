@@ -60,7 +60,7 @@ main {
 }
 
 .image-wrapper h3 {
-  text-align: center; /* Center-align text */
+  text-align: inherit; /* Center-align text */
   margin: 0; /* Remove default margins */
 }
 
