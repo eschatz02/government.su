@@ -27,7 +27,6 @@ nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: inline-block;
 }
 
 nav ul li {
@@ -45,6 +44,7 @@ main {
   padding: 20px;
 }
 
+/* Container and Image styles */
 .container {
   display: inline-grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -58,12 +58,12 @@ main {
   max-width: 250px;
   max-height: 250px;
   /* Adjust margin as needed */
-  margin-left: 20px;
+  margin-left: 10px; /* Adjusted margin */
 }
 
 .image-wrapper h3 {
-  text-align: center; /* Center-align text */
-  margin: 0; /* Remove default margins */
+  text-align: center;
+  margin: 0;
 }
 
 /* Footer styles */
