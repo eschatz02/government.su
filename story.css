@@ -46,6 +46,13 @@ main {
   padding: 20px;
 }
 
+main p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333; /* Adjust text color as needed */
+  margin-bottom: 20px; /* Add margin below paragraphs */
+}
+
 /* Footer styles */
 footer {
   background-color: #333;
@@ -58,6 +65,11 @@ footer {
 .footer-section {
   flex: 1;
   margin-right: 20px;
+}
+
+/* Center align the h1 in the header */
+header h1 {
+  margin: 0 0 0 125px; /* Offset title by 50px to the right */
 }
 
 /* Media queries for responsiveness */
